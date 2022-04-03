@@ -7,11 +7,9 @@ def install():
     print(str(len(play_list.video_urls)) + ' > ' + 'Videos')
     print('Enter Y for Start Download or N for Cancel')
     what = input('')
-    print('Enter resolution as 480, 720')
-    quilt = input('')
     if what == 'Y' or 'y':
         for video in play_list.videos:
-            video.streams.filter(res=quilt+'p', progressive=True, file_extension='mp4').first().download(Dir)
+            video.streams.get_highest_resolution.first().download(Dir)
         print('Download is complete')
     else:
         print('Download is Not complete')
