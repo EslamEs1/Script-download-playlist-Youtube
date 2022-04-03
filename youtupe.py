@@ -7,7 +7,7 @@ def install():
     print(str(len(play_list.video_urls)) + ' > ' + 'Videos')
     print('Enter Y for Start Download or N for Cancel')
     what = input('')
-    print('Enter resolution as 480, 720, 1080,')
+    print('Enter resolution as 480, 720')
     quilt = input('')
     if what == 'Y':
         for video in play_list.videos:
