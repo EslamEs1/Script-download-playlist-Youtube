@@ -9,7 +9,7 @@ def install():
     what = input('')
     print('Enter resolution as 480, 720')
     quilt = input('')
-    if what == 'Y':
+    if what == 'Y' or 'y':
         for video in play_list.videos:
             video.streams.filter(res=quilt+'p', progressive=True, file_extension='mp4').first().download(Dir)
         print('Download is complete')
