@@ -9,7 +9,7 @@ def install():
     what = input('')
     if what == 'Y' or 'y':
         for video in play_list.videos:
-            video.streams.get_highest_resolution().first().download(Dir)
+                video.streams.get_highest_resolution().download(Dir)
         print('Download is complete')
     else:
         print('Download is Not complete')
