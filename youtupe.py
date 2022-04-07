@@ -1,7 +1,7 @@
 from pytube import Playlist
 # By Eslam Es
 def install():
-    print('Enter URL Here')
+    print('Enter URL playlist Here')
     links = input('');play_list = Playlist(links)
     print('Enter Your path');Dir = input('')
     print(str(len(play_list.video_urls)) + ' > ' + 'Videos')
